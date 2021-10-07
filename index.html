@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>19BCE0813 Sanskriti Srivastava</title>
+</head>
+<style>
+    .jcc{
+        justify-content: center;
+    }
+    .aic {
+        align-items: center;
+        text-align: center;
+    }
+    .margt {
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <nav>
+        <div style="justify-content: space-between;" class="flex">
+            <h4 class="heading1">Shopping Cart</h4>
+            <div class="margt">
+                <a style="margin-right: 20px;" class="active text_para" href="./index.html">Home</a>
+                <a class="text_para" href="./about.html">About</a>
+            </div>
+            <div class="margt">
+                <button class="text_para btn1">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <div class="aic">
+        <h2 class="heading">Shopping cart</h2>
+    </div>
+    <div class="content flex jcc">
+        <div class="margt">
+            <ul>
+                <li class="text_para">Shop for appliances</li>
+                <li class="text_para">Get 30% cashback</li>
+                <li class="text_para">Avail great discounts</li>
+            </ul>
+        </div>
+        <div>
+            <img style="margin-left: 50%;" width="50%" src="./online-shopping-n57.jpg" alt="shop">
+        </div>
+    </div>
+    <div style="border-style: solid; border-width: 6px;" class="jcc aic">
+        <img id="container" src="./size.png" alt=""> <br>
+        <div class="flex aic jcc">
+            <button onclick="enlarge()">Enlarge</button>
+            <button onclick="shrink()">Shrink</button>
+        </div>
+    </div>
+    <div class="jcc aic">
+        <div id="chooseDifficulty" style="display: block">
+
+            <h1 class="heading1">Guess a Word</h1>
+            <h5 class="text_para">Choose a difficulty</h5>
+            <button class="text_para btn" title="very easy" onclick="chooseDif1()">easy</button>
+            <button class="text_para btn" title="not difficult" onclick="chooseDif2()">normal</button>
+            <button class="text_para btn" title="a challenge" onclick="chooseDif3()">hard</button>
+
+        </div>
+
+        <div id="startButton" style="display: none;">
+
+            <h1 class="heading1">Guess a Word</h1>
+            <button class="text_para btn" onclick="start()">Start</button>
+            <p class="text_para">Hyphen might be present in some words. Eg: X-ray</p>
+
+        </div>
+
+        <div id="mainGame" style="display: none">
+
+        <p class="text_para" id="question"></p>
+
+        <input class="text_para" type="text" id="guess" maxlength="1">
+        <div>
+            <button class="text_para margt btn" onclick="enterGuess()">Enter Guess</button>
+        </div>
+
+        </div>
+
+        <div id="RRguess" style="display: block">
+
+        <p class="text_para" id="rightGuess"></p>
+        <p class="text_para" id ="wrongGuess"></p>
+        <p class="text_para" id ="guessesLeft"></p>
+
+        </div>
+
+        <div id="youLose" style="display: none">
+
+            <h1 class="heading">You Lose</h1>
+
+            <div>
+                <button class="text_para btn" onclick="restart()">Play again?</button>
+            </div>
+
+            <p class="text_para" id="correctWordWas"></p>
+
+        </div>
+
+        <div id="youWin" style="display: none">
+
+            <h2 class="heading">You Win</h2>
+
+            <div>
+                <button class="text_para btn" onclick="restart()">Play again?</button>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <canvas id="myCanvas" width="200" class="flex jcc aic" height="100"
+        style="border:1px solid #c3c3c3;">
+        Your browser does not support the canvas element.
+        </canvas>
+    </div>
+    <script>
+        function enlarge() {
+            var image = document.getElementById('container');
+            image.style.width = '500px';
+            image.style.height = 'auto';
+        }
+        function shrink() {
+            var image = document.getElementById('container');
+            image.style.width = '100px';
+            image.style.height = 'auto';
+        }
+        
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0,0,150,75);
+    </script>
+</body>
+</html>

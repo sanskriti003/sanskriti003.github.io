@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>19BCE0813 Sanskriti Srivastava</title>
+</head>
+<style>
+    .jcc{
+        justify-content: space-around;
+    }
+    .aic {
+        align-items: center;
+        text-align: center;
+    }
+    .marg {
+        margin-top: 20px;
+    }
+    #day {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    #day td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    }
+
+    #day tr:nth-child(even){background-color: #f2f2f2;}
+
+    #day tr:hover {background-color: #ddd;}
+
+    #day th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(133, 135, 255);
+    color: white;
+    }
+
+    .prev {
+        color: rgb(52, 79, 233);
+    }
+</style>
+<body>
+    <nav>
+        <div style="justify-content: space-between;" class="flex">
+            <h4 class="heading1">Shopping Cart</h4>
+            <div class="marg">
+                <a style="margin-right: 20px;" class="text_para" href="./index.html">Home</a>
+                <a class="active text_para" href="./about.html">About</a>
+            </div>
+            <div class="marg">
+                <button class="text_para btn1">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <div class="aic">
+        <h2 class="heading">Shopping cart</h2>
+    </div>
+    <div class="content flex jcc">
+        <p class="text_para">Sanskriti Srivastava 19BCE0813 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sequi reprehenderit architecto deleniti dolor facere corporis aliquam delectus quia quae id, itaque voluptas voluptates iste sapiente! Dignissimos officia maiores porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda eius ea ad provident voluptates pariatur sint quae repudiandae dignissimos ratione culpa eos magnam consequuntur, obcaecati est aliquam non vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt eligendi beatae reiciendis quos, magnam quam aut possimus impedit explicabo eaque officiis quibusdam voluptate perspiciatis ea eius expedita, fugit vero.</p>
+        <p class="text_para">Sanskriti Srivastava 19BCE0813 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sequi reprehenderit architecto deleniti dolor facere corporis aliquam delectus quia quae id, itaque voluptas voluptates iste sapiente! Dignissimos officia maiores porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda eius ea ad provident voluptates pariatur sint quae repudiandae dignissimos ratione culpa eos magnam consequuntur, obcaecati est aliquam non vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt eligendi beatae reiciendis quos, magnam quam aut possimus impedit explicabo eaque officiis quibusdam voluptate perspiciatis ea eius expedita, fugit vero.</p>
+        <p class="text_para">Sanskriti Srivastava 19BCE0813 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sequi reprehenderit architecto deleniti dolor facere corporis aliquam delectus quia quae id, itaque voluptas voluptates iste sapiente! Dignissimos officia maiores porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda eius ea ad provident voluptates pariatur sint quae repudiandae dignissimos ratione culpa eos magnam consequuntur, obcaecati est aliquam non vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt eligendi beatae reiciendis quos, magnam quam aut possimus impedit explicabo eaque officiis quibusdam voluptate perspiciatis ea eius expedita, fugit vero.</p>
+    </div>
+    <div class="aic">
+        <p class="heading" style="font-weight: bold;" id="myText">I am Sanskriti Srivastava</p>
+        <button class="text_para aic" onclick="myFunction()">Change Text</button>
+    </div>
+    <br>
+    <div>
+        <table id="day">
+            <tr>
+              <th>Previous Days</th>
+              <th>Month</th>
+              <th>Year</th>
+            </tr>
+            <tr>
+              <td class="prev">Monday 12</td>
+              <td>March</td>
+              <td>2001</td>
+            </tr>
+            <tr>
+              <td class="prev">Thursday 14</td>
+              <td>October</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td class="prev">Wednesday 2</td>
+              <td>January</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td class="prev">Friday 3</td>
+              <td>September</td>
+              <td>2021</td>
+            </tr>
+          </table>
+    </div>
+
+    <script>
+    function myFunction() {
+    document.getElementById("myText").innerHTML = "My reg no is 19BCE0813";
+    }
+    </script>
+</body>
+</html>
